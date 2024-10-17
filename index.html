@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator 1.0</title>
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Tip Calculator 1.0</h1>
+      <div class="form">
+        <p><em>For those that hate math!</em></p>
+        <div class="second-container">
+            <p>Total Bill:</p><input class="total-bill">
+            <p>Tip Percentage:</p><input class="tip">
+            
+            <button class="btn">Calculate!</button>
+            <button class="clear">Reset</button>
+        </div>
+        <div class="total">
+            <p class="tip">Tip: $0.00</p>
+            <p class="money">Final Bill: $0.00</p>
+        </div>
+
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./tipcalc.js"></script>
+  </body>
+</html>

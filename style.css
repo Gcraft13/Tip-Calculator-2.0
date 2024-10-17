@@ -1,0 +1,47 @@
+body {
+  background-color: #e4debe;
+  color: #d24545;
+  font-size: 2rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #d24545;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  background-color: #e4debe;
+  border: solid #d24545;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn {
+  margin: 10px;
+  background-color: #ff6868;
+  color: white;
+  font-size: 16px;
+}
+
+.clear {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.pressed {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
