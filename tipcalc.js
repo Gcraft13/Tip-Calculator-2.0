@@ -15,11 +15,24 @@ $(".btn").click(function () {
   let bill = Number($(".total-bill").val());
   let tip = Number($(".tip").val());
 
-  let percentageOfTip = Number(tip * 0.01);
+  let percentageOfTip = tip * 0.01;
 
-  let tipAmount = Math.round(bill * percentageOfTip);
-  let finalBill = Math.round(bill + tipAmount) * 100;
+  let tipAmount = bill * percentageOfTip;
+  let finalBill = bill + tipAmount;
 
-  $(".tip").text(`Tip: $ ${tipAmount}`);
-  $(".money").text(`Final Bill: $ ${finalBill}`);
+  $(".tip").text(`Tip: $ ${tipAmount.toFixed(2)}`);
+  $(".money").text(`Final Bill: $ ${finalBill.toFixed(2)}`);
+  $(".total").show();
+});
+
+//Reset button functions
+
+function clearBtn() {
+  $(".tip").text("");
+  $(".money").text("");
+  $(".total").hide();
+}
+
+$(".clear").click(function () {
+  clearBtn();
 });
